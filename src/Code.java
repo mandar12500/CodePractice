@@ -1,7 +1,9 @@
-public class Code {
+import javax.swing.*;
+
+public class Code extends JApplet {
     public static void main(String[] args) {
         String[] Words = {"Hello", "Hekko", "Heppo"};
-        for (String w: Words) {
+        for (String w : Words) {
             if (w.startsWith("He")) {
                 System.out.println(w + "starts with He");
             }
@@ -11,9 +13,11 @@ public class Code {
         }
         Factorial fact = new Factorial(8);
         System.out.println(fact.computeFactorial());
+        System.out.println("1 1 1");
+        System.out.println("This is the example of factorial of a number");
+        System.out.printf("%s Example of a Factorial Calculation Class", "This");
     }
 }
-
 class Factorial {
     int num;
     public Factorial(int num) {
